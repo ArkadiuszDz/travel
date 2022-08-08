@@ -1,0 +1,84 @@
+{
+  "trips": [
+    {
+      "id": "3bhd-438m-7563-jgh0",
+      "title": "European Quest",
+      "oldPrice": "Price €3,385",
+      "newPrice": "From €2,877",
+      "info": "11 countires, 25 days",
+      "src": "image_1.jpeg",
+      "rating": 4.6
+    },
+    {
+      "id": "43nm-65jj-dus5-pol3",
+      "title": "Simply Italy",
+      "oldPrice": "Price €2,155",
+      "newPrice": "From €1,832",
+      "info": "2 countires, 15 days",
+      "src": "image_2.jpeg",
+      "rating": 4.4
+    },
+    {
+      "id": "094k-gh26-fr21-lko1",
+      "title": "Italian Espresso",
+      "oldPrice": "Price €1,465",
+      "newPrice": "From €1,245",
+      "info": "1 country, 10 days",
+      "src": "image_3.jpeg",
+      "rating": 4.5
+    },
+    {
+      "id": "b78k-g2dc-f1g1-lk43",
+      "title": "Greek Tour",
+      "oldPrice": "Price €1,765",
+      "newPrice": "From €1,345",
+      "info": "1 country, 7 days",
+      "src": "image_7.jpeg",
+      "rating": 4.8
+    },
+    {
+      "id": "acb7-34fc-46hf-8hdy",
+      "title": "Greek Islands",
+      "oldPrice": "Price €1,75",
+      "newPrice": "From €1,145",
+      "info": "1 country, 8 days",
+      "src": "image_6.jpeg",
+      "rating": 4.7
+    }
+  ],
+  "3bhd-438m-7563-jgh0": {
+    "title": "European Quest",
+    "info": "Maecenas vehicula finibus velit, ac vehicula eros sagittis sit amet. Aenean posuere ac erat et interdum. Suspendisse blandit magna a consectetur blandit. Sed quis sodales ligula. Integer vitae ligula et tortor viverra posuere ac non nisl. Vestibulum eu lorem a augue pulvinar bibendum sed non ex. Proin volutpat porttitor tincidunt. Sed mauris ex, interdum sed luctus quis, finibus in tellus. Pellentesque congue ante eget efficitur iaculis. Cras semper vel erat feugiat gravida. Integer leo erat, ullamcorper ac eros sit amet, elementum tristique metus. Curabitur pellentesque quam hendrerit venenatis vestibulum. Curabitur lacus dui, congue id luctus in, laoreet eget tortor. Pellentesque sit amet sagittis massa. Nunc tempor nec tellus et eleifend. Pellentesque gravida, velit sit amet scelerisque facilisis, ante nisl imperdiet est, sed eleifend turpis enim nec leo.",
+    "images": [
+      "image_1.jpeg", "image_2.jpeg", "image_3.jpeg"
+    ]
+  },
+  "43nm-65jj-dus5-pol3": {
+    "title": "Simply Italy",
+    "info": "Maecenas vehicula finibus velit, ac vehicula eros sagittis sit amet. Aenean posuere ac erat et interdum. Suspendisse blandit magna a consectetur blandit. Sed quis sodales ligula. Integer vitae ligula et tortor viverra posuere ac non nisl. Vestibulum eu lorem a augue pulvinar bibendum sed non ex. Proin volutpat porttitor tincidunt. Sed mauris ex, interdum sed luctus quis, finibus in tellus. Pellentesque congue ante eget efficitur iaculis. Cras semper vel erat feugiat gravida. Integer leo erat, ullamcorper ac eros sit amet, elementum tristique metus. Curabitur pellentesque quam hendrerit venenatis vestibulum. Curabitur lacus dui, congue id luctus in, laoreet eget tortor. Pellentesque sit amet sagittis massa. Nunc tempor nec tellus et eleifend. Pellentesque gravida, velit sit amet scelerisque facilisis, ante nisl imperdiet est, sed eleifend turpis enim nec leo.",
+    "images": [
+      "image_1.jpeg", "image_2.jpeg", "image_4.jpeg"
+    ]
+  },
+  "094k-gh26-fr21-lko1": {
+    "title": "Italian Espresso",
+    "info": "Maecenas vehicula finibus velit, ac vehicula eros sagittis sit amet. Aenean posuere ac erat et interdum. Suspendisse blandit magna a consectetur blandit. Sed quis sodales ligula. Integer vitae ligula et tortor viverra posuere ac non nisl. Vestibulum eu lorem a augue pulvinar bibendum sed non ex. Proin volutpat porttitor tincidunt. Sed mauris ex, interdum sed luctus quis, finibus in tellus. Pellentesque congue ante eget efficitur iaculis. Cras semper vel erat feugiat gravida. Integer leo erat, ullamcorper ac eros sit amet, elementum tristique metus. Curabitur pellentesque quam hendrerit venenatis vestibulum. Curabitur lacus dui, congue id luctus in, laoreet eget tortor. Pellentesque sit amet sagittis massa. Nunc tempor nec tellus et eleifend. Pellentesque gravida, velit sit amet scelerisque facilisis, ante nisl imperdiet est, sed eleifend turpis enim nec leo.",
+    "images": [
+      "image_1.jpeg", "image_4.jpeg", "image_3.jpeg"
+    ]
+  },
+  "b78k-g2dc-f1g1-lk43": {
+    "title": "Greek Tour",
+    "info": "Maecenas vehicula finibus velit, ac vehicula eros sagittis sit amet. Aenean posuere ac erat et interdum. Suspendisse blandit magna a consectetur blandit. Sed quis sodales ligula. Integer vitae ligula et tortor viverra posuere ac non nisl. Vestibulum eu lorem a augue pulvinar bibendum sed non ex. Proin volutpat porttitor tincidunt. Sed mauris ex, interdum sed luctus quis, finibus in tellus. Pellentesque congue ante eget efficitur iaculis. Cras semper vel erat feugiat gravida. Integer leo erat, ullamcorper ac eros sit amet, elementum tristique metus. Curabitur pellentesque quam hendrerit venenatis vestibulum. Curabitur lacus dui, congue id luctus in, laoreet eget tortor. Pellentesque sit amet sagittis massa. Nunc tempor nec tellus et eleifend. Pellentesque gravida, velit sit amet scelerisque facilisis, ante nisl imperdiet est, sed eleifend turpis enim nec leo.",
+    "images": [
+      "image_5.jpeg", "image_6.jpeg"
+    ]
+  },
+  "acb7-34fc-46hf-8hdy": {
+    "title": "Greek Islands",
+    "info": "Maecenas vehicula finibus velit, ac vehicula eros sagittis sit amet. Aenean posuere ac erat et interdum. Suspendisse blandit magna a consectetur blandit. Sed quis sodales ligula. Integer vitae ligula et tortor viverra posuere ac non nisl. Vestibulum eu lorem a augue pulvinar bibendum sed non ex. Proin volutpat porttitor tincidunt. Sed mauris ex, interdum sed luctus quis, finibus in tellus. Pellentesque congue ante eget efficitur iaculis. Cras semper vel erat feugiat gravida. Integer leo erat, ullamcorper ac eros sit amet, elementum tristique metus. Curabitur pellentesque quam hendrerit venenatis vestibulum. Curabitur lacus dui, congue id luctus in, laoreet eget tortor. Pellentesque sit amet sagittis massa. Nunc tempor nec tellus et eleifend. Pellentesque gravida, velit sit amet scelerisque facilisis, ante nisl imperdiet est, sed eleifend turpis enim nec leo.",
+    "images": [
+      "image_5.jpeg", "image_6.jpeg", "image_7.jpeg"
+    ]
+  }
+}
