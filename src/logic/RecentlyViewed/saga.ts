@@ -10,7 +10,7 @@ function* fetchRecentlyViewedData(action: AnyAction): Generator<CallEffect | Put
     yield put(setRecentlyViewed(response.data));
 
   } catch (e) {
-
+    console.log(e);
   }
 }
 
