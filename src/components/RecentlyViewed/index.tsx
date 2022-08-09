@@ -6,11 +6,10 @@ import * as Styled from './styles';
 
 interface Props {
   recently_viewed: TripInfo[];
-  getRecentlyViewed: (cookie: string) => void
+  getRecentlyViewed: (cookie: string) => void;
 }
 
 const RecentlyViewed: React.FC<Props> = ({ getRecentlyViewed, recently_viewed }) => {
-  console.log(recently_viewed);
 
   useEffect(() => {
     const cookie = getCookie('recently_viewed');

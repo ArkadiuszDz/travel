@@ -1,47 +1,61 @@
-import { createStore, applyMiddleware, compose } from 'redux';
+import { applyMiddleware, compose, Action } from 'redux';
+import { configureStore } from '@reduxjs/toolkit'
 import { composeWithDevTools } from 'redux-devtools-extension';
 import createSagaMiddleware from 'redux-saga';
+import { TripDetailsType, TripInfo } from './apiResponseTypes';
 
 import { rootReducer } from './rootReducer';
 import { rootSaga } from './rootSaga';
 
 export interface RootStore {
-
+  carouselData: {
+    trips_data: TripInfo[],
+    get_trips_data_error: boolean
+  },
+  tripData: {
+    trip_details: TripDetailsType,
+    get_trip_details_error: boolean
+  },
+  recentlyViewedData: {
+    recently_viewed: TripInfo[]
+  }
 }
 
 export const initState = {
   carouselData: {
     trips_data: [],
-    recently_viewed: [],
-    recently_viewed_cookie: ''
+    get_trips_data_error: false
   },
   tripData: {
-    trip_details: {}
+    trip_details: {
+      title: '',
+      info: '',
+      images: []
+    },
+    get_trip_details_error: false
+  },
+  recentlyViewedData: {
+    recently_viewed: []
   }
 }
 
-export default function configureStore(initialState: RootStore = initState) {
+const sagaMiddleware = createSagaMiddleware();
+const middlewares = [sagaMiddleware];
+const enhancers = [applyMiddleware(...middlewares)];
 
-  const sagaMiddleware = createSagaMiddleware();
-  const middlewares = [sagaMiddleware];
+const store = configureStore({
+  reducer: rootReducer,
+  middleware: (getDefaultMiddleware) => {
+    return getDefaultMiddleware().concat(...middlewares)
+  },
+  enhancers: [composeWithDevTools(...enhancers)],
+  devTools: process.env.NODE_ENV !== 'production' && typeof window === 'object',
+  preloadedState: initState
+});
 
-  const enhancers = [applyMiddleware(...middlewares)];
+export default store;
 
-  let enhancer: any;
+sagaMiddleware.run(rootSaga);
 
-  if (process.env.REACT_APP_NODE_ENV !== 'production' && typeof window === 'object') {
-    enhancer = composeWithDevTools(...enhancers);
-  } else {
-    enhancer = compose(...enhancers)
-  }
-
-  const store = createStore(
-    rootReducer,
-    initialState,
-    enhancer
-  );
-
-  sagaMiddleware.run(rootSaga);
-
-  return store;
-}
+export type RootState = ReturnType<typeof store.getState>;
+export type AppDispatch = typeof store.dispatch;

@@ -11,7 +11,7 @@ export const getTripDetails = (id: string) => ({
   payload: id
 });
 
-export const setTripDetails = (data: TripDetailsType | null) => ({
+export const setTripDetails = (data: TripDetailsType) => ({
   type: constants.SET_TRIP_DETAILS,
   payload: data
 });

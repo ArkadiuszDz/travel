@@ -1,13 +1,18 @@
 import { constants } from './actions';
 import { AnyAction } from 'redux';
+import { TripInfo } from '../../apiResponseTypes';
+
+export interface TripsCarouselStateType {
+  trips_data: TripInfo[];
+  get_trips_data_error: boolean;
+}
 
 const initialState = {
   trips_data: [],
-  recently_viewed: [],
   get_trips_data_error: false
 };
 
-export function carouselReducer(state = initialState, action: AnyAction) {
+export function carouselReducer(state: TripsCarouselStateType = initialState, action: AnyAction) {
   switch(action.type) {
     case constants.SET_TRIPS:
       return {

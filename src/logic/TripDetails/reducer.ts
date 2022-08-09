@@ -1,12 +1,22 @@
 import { constants } from './actions';
 import { AnyAction } from 'redux';
+import { TripDetailsType } from '../../apiResponseTypes';
+
+export interface TripDetailsStateType {
+  trip_details: TripDetailsType;
+  get_trip_details_error: boolean;
+}
 
 const initialState = {
-  trip_details: null,
+  trip_details: {
+    title: '',
+    info: '',
+    images: []
+  },
   get_trip_details_error: false,
 };
 
-export function tripDetailsReducer(state = initialState, action: AnyAction) {
+export function tripDetailsReducer(state: TripDetailsStateType = initialState, action: AnyAction) {
   switch(action.type) {
     case constants.SET_TRIP_DETAILS:
       return {

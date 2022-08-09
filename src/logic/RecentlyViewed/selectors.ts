@@ -1,2 +1,3 @@
-export const getRecentlyViewedSelector = (state: any) => state.recentlyViewedData.recently_viewed;
-export const getRecentlyViewedCookieSelector = (state: any) => state.recentlyViewedData.recently_viewed_cookie;
+import { RootState } from "../../configureStore";
+
+export const getRecentlyViewedSelector = (state: RootState) => state.recentlyViewedData.recently_viewed;

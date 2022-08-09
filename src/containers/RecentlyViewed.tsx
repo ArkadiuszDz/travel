@@ -1,16 +1,15 @@
 import { connect } from 'react-redux';
-import { Dispatch } from 'redux';
 import RecentlyViewed from '../components/RecentlyViewed';
+import { AppDispatch, RootState } from '../configureStore';
 import { getRecentlyViewed } from '../logic/RecentlyViewed/actions';
-import { getRecentlyViewedSelector, getRecentlyViewedCookieSelector } from '../logic/RecentlyViewed/selectors';
+import { getRecentlyViewedSelector } from '../logic/RecentlyViewed/selectors';
 
 
-const mapStateToProps = (state: any) => ({
+const mapStateToProps = (state: RootState) => ({
   recently_viewed: getRecentlyViewedSelector(state),
-  recently_viewed_cookie: getRecentlyViewedCookieSelector(state)
 })
 
-const mapDispatchToProps = (dispatch: Dispatch) => ({
+const mapDispatchToProps = (dispatch: AppDispatch) => ({
   getRecentlyViewed: (id: string) => dispatch(getRecentlyViewed(id))
 });
 
